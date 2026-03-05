@@ -5,7 +5,7 @@ from data import INCORRECT_PARAM
 
 class TestLoginUser:
     @allure.title("Тест: Авторизация существующего пользователя")
-    @allure.description("Пользователя создаются и перебираются")
+    @allure.description("Пользователи создаются и перебираются")
     @pytest.mark.parametrize("index", [0, 1, 2])
     def test_login_existing_user(self, index, user_methods, existing_users):
         user = existing_users[index]
@@ -21,7 +21,7 @@ class TestLoginUser:
         assert "accessToken" in response.json()
 
     @allure.title("Тест: Авторизация с неправильными данными")
-    @allure.description("Пользователя создаются и перебираются, различные варианты данных")
+    @allure.description("Пользователи создаются и перебираются, различные варианты данных")
     @pytest.mark.parametrize("index", [0, 1, 2])
     @pytest.mark.parametrize("param", ["email", "password"])
     def test_login_with_wrong_param(self, index, param, user_methods, existing_users):
