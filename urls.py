@@ -1,0 +1,6 @@
+BASE_URL = "https://stellarburgers.education-services.ru"
+CREATE_USER = "/api/auth/register"
+AUTH_ENDPOINT = "/api/auth/user"
+LOGIN_USER = "/api/auth/login"
+INGREDIENTS_ENDPOINT = "/api/ingredients"
+ORDER = "/api/orders"
