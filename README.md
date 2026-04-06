@@ -25,14 +25,14 @@
 
 ### Структура проекта
 
-- `methods` - пакет, содержащий методы, испотзуемые в тестах;
+- `methods` - пакет, содержащий методы, используемые в тестах;
 - `tests` - пакет, содержащий тесты, разделенные по тестируемому функционалу. Например, `test_login_user.py`, `test_get_orders.py` и т.д.
 
 ### Создать и открыть отчет в браузере
-allure serve allure-results
+> allure serve allure-results
 
 ### Или создать статический отчет
-allure generate allure-results -o allure-report --clean
+> allure generate allure-results -o allure-report --clean
 
 **Установка зависимостей**
 
